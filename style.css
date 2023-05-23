@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+    width: auto;
+    height: auto;
+    background: #212529;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,a,h1,h2,h3 {
+    color: #fafafa;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+/*-----------------------------MENU NAV---------------------------------*/
+header {
+    width: auto;
+    height: auto;
+    margin: 25px 0 0 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 117px 0 0;
+}
+
+.menu-nav-logo {
+    width: 64px;
+    margin: 0 0 0 50px;
+}
+
+.menu-nav {
+    display: flex;
+}
+
+.menu-nav-item {
+    padding: 10px;
+}
+
+.menu-nav-item a {
+    transition: all 0.3s;
+    color: #fafafa;
+}
+
+.menu-nav-item a:hover {
+    color: #0A9500;
+}
+
+/*-------------------------------------------------------------------*/
+
+/*----------------------------MAIN------------------------------------*/
+main {
+    width: 90%;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 50px 50px;
+}
+
+main img {
+    width: 300px;
+    height: auto;
+}
+
+.card-perfil {
+    width: 382px;
+    height: 700px;
+    border: 1px solid #000;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0);
+}
+
+.card-perfil p {
+    font-size: 13px;
+    margin: 10px 0;
+    color: #978d8d;
+}
+
+.card-foto {
+    width: 300px;
+    height: auto;
+    background-color: #fafafa;
+    border: 0.5px solid #000;
+    border-radius: 30px;
+    transition: all 0.6s;
+    margin: 20px 0;
+}
+
+.card-foto:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0px 16px 0 rgb(45 117 1);
+}
+
+/*-------------------------------------------------------------------*/
+
+/*---------------------------RODAPÉ-----------------------------*/
+footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3333;
+    transition: all 0.5s;
+}
+
+footer:hover {
+    background: #333333;
+}
+
+footer strong {
+    color: #0A9500;
+}
+
+/*----------------------------------------------------------------*/
