@@ -5,7 +5,7 @@ body {
     height: auto;
     background: #212529;
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
+    margin: 25px 0 0 0;
     padding: 0;
 }
 
@@ -38,7 +38,7 @@ header {
 .menu {
     display: flex;
     justify-content: space-between;
-    margin: 25px 117px 25px 0;
+    margin: 0 117px 0 0;
 }
 
 .menu-nav-logo {
@@ -72,7 +72,8 @@ header {
 /*----------------------------MAIN------------------------------------*/
 main {
     width: 90%;
-    margin: 0 auto;
+    height: auto;
+    margin: 40px auto;
 }
 
 section {
@@ -81,14 +82,22 @@ section {
 
 .conteudo-principal-apresentacao {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .conteudo-principal-apresentacao-texto {
     display: flex;
-    margin: 0 50px;
+    padding: 20px 50px 0;
     flex-direction: column;
+}
+
+.conteudo-principal-apresentacao-texto h1 {
+    margin: 0 0 32px 0;
+}
+
+.conteudo-principal-apresentacao-texto p {
+    text-align: justify;
+    line-height: 22px;
+    font-size: 18px;
 }
 
 main img {
@@ -157,7 +166,7 @@ main img {
     border: 0.5px solid #000;
     border-radius: 30px;
     transition: all 0.6s;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .card-foto:hover {
@@ -169,16 +178,24 @@ main img {
 
 /*---------------------------RODAPÉ-----------------------------*/
 footer {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #3333;
-    transition: all 0.5s;
-    margin: 25px 0 0 0;
+    position: relative;
+    bottom: 0px;
 }
 
-footer:hover {
+.copyright-footer {
+    height: 80px;
+    display: flex;
+    background: #3333;
+    transition: all 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-footer p {
+    margin: 0;
+}
+
+.copyright-footer:hover {
     background: #333333;
 }
 
