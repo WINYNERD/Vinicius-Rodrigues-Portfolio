@@ -21,6 +21,10 @@
 @media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 480px) {
+    body {
+        height: auto;
+    }
+    
     .menu {
         display: flex;
         flex-direction: column;
