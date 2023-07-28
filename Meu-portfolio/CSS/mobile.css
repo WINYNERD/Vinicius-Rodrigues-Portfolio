@@ -24,18 +24,27 @@
     body {
         height: auto;
     }
-    
+
+    header {
+        padding: 15px 0 0 0;
+    }
+
     .menu {
         display: flex;
-        flex-direction: column;
-        align-content: stretch;
-        align-items: center;
-        flex-wrap: wrap;
         margin: 0;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        gap: 0;
     }
 
     .hamburguer {
-        display: visible;
+        position: absolute;
+        left: 5px;
+        top: 80px;
+    }
+
+    .hamburguer.open {
+        top: 89px;
     }
 
     .menu-nav {
