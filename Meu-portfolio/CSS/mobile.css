@@ -86,6 +86,24 @@
         flex-direction: column;
         padding: 0;
     }
+    .conteudo-principal-skills {
+        width: 90%;
+    }
+    .conteudo-principal-skills p {
+        font-size: 17px;
+        line-height: 30px;
+        text-align: inherit; 
+    }
+
+    .conteudo-principal-contato {
+        width: 90%;
+    }
+    .conteudo-principal-contato .informacoes {
+        padding: 23px;
+    }
+    .conteudo-principal-contato h1 {
+        font-size: 20px;
+    }
 
     .conteudo-principal-apresentacao-texto {
         display: flex;

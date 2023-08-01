@@ -20,7 +20,7 @@ html {
     height: auto;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    background-image: url(/Meu-portfolio/FOTOS-PNG/TERRA.jpg);
+    background-image: url(../FOTOS-PNG/TERRA.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -35,7 +35,7 @@ html::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/Meu-portfolio/FOTOS-PNG/TERRA.jpg);
+    background-image: url(../FOTOS-PNG/TERRA.jpg);
     background-size: cover;
     background-position: center;
     filter: blur(5px);
@@ -135,6 +135,10 @@ header {
 .hamburguer.open span.bot {
     transform: rotate(134deg);
     position: absolute;
+}
+
+.hamburguer.open span.top,.hamburguer.open span.bot {
+    background-color: #ff4141;
 }
 
 .menu-hamburguer {
