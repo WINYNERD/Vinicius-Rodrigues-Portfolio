@@ -9,7 +9,7 @@ hamburguer.addEventListener('click', function () {
 function ativarNavMobile() {
     var screenWidth = window.innerWidth;
 
-    if (screenWidth < 480) {
+    if (screenWidth <= 480) {
         hamburguer.style.display = "flex";
         menu.style.display = "flex";
     } else {

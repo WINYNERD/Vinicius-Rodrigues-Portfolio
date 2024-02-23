@@ -1,5 +1,5 @@
 // TEXTO PRINCIPAL DE BOAS VINDAS
-const text = "Olá, Meu nome é Vinícius e sou um desenvolvedor front-end com paixão por criar experiências digitais envolventes e intuitivas. Atualmente, estou cursando a faculdade de Análise e Desenvolvimento de Sistemas, onde aprimoro minhas habilidades técnicas e adquiro conhecimentos fundamentais para a indústria de tecnologia. Com um olhar atento para o design e a usabilidade, busco constantemente aperfeiçoar minha habilidade em transformar ideias em interfaces elegantes e responsivas.";
+const text = "Olá, Meu nome é Vinícius sou desenvolvedor front-end com paixão por criar experiências digitais envolventes e intuitivas. Atualmente, estou cursando a faculdade de Análise e Desenvolvimento de Sistemas.";
 const typingAnimationElement = document.getElementById("typing-animation");
 
 function startTypingAnimation() {

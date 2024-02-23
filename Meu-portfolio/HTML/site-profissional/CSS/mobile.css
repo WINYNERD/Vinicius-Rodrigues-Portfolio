@@ -1,0 +1,369 @@
+@media screen and (max-width: 420px) {
+    body {
+        background: #151b2c;
+        width: 100%;
+        height: auto;
+    }
+    .menu-contato-link {
+        height: 100%;
+    }
+    .banner-menu-contato-link {
+        height: 420px;
+    }
+    .banner-menu-contato-link-parte-cima {
+        display: none;
+    }
+    .caixa-banner-menu-contato-link-baixo {
+        height: 100%;
+    }
+    .banner-menu-contato-link-parte-baixo {
+        height: auto;
+        padding: 88px 0 94px;
+    }
+    .caixa-menu-logo-parte-cima {
+        width: auto;
+        height: auto;
+        flex-wrap: nowrap;
+        background-color: #fdfcfc;
+        padding: 13.5px 0;
+    }
+    .caixa-menu-logo-parte-cima #logo-Aievari-branca {
+        margin: 0;
+        left: 0;
+        width: 130px;
+    }
+    .caixa-menu-logo-parte-cima #link-nome {
+        display: none;
+        margin: 0;
+        left: 0;
+    }
+    .caixa-menu-logo-parte-cima #link-nome-logar {
+        display: none;
+    }
+    .caixa-menu-logo-parte-baixo {
+        display: block;
+    }
+    .caixa-menu-logo-parte-baixo h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    #conteudo-apresentacao-comecar {
+        padding: 18px 14px;
+        width: auto;
+        height: auto;
+        font-size: 14px;
+    }
+    .botao-play-nome {
+        font-size: 15px;
+    }
+    .caixa-menu-parte-baixo {
+        padding-bottom: 0;
+        gap: 20px;
+        padding-top: 40px;
+    }
+    .background-conteudo-1 {
+        height: auto;
+        padding: 0px 63px 100px;
+    }
+    .caixa-conteudo-1 {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+    }
+    .conteudo-01 {
+        width: auto;
+        margin: 0;
+    }
+    .conteudo-01 {
+        border-bottom: 1px solid #E6922E;
+    }
+    .conteudo-01 h3 {
+        margin-bottom: 44px;
+        color: #151b2c;
+    }
+    .conteudo-01 .detalhe-conteudo-1 {
+        display: none;
+    }
+    .background-conteudo-2 {
+        padding: 100px 0;
+        height: auto;
+    }
+    .conteudo-2 {
+        padding: 0px 60px;
+    }
+    .conteudo-2 h2{
+        font-size: 30px;
+        line-height: 38px;
+        padding-top: 100px;
+        padding-bottom: 15px;
+    }
+    .conteudo-2 p {
+        line-height: 26px;
+        padding-bottom: 0px;
+    }
+    .conteudo-2-caixas {
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .conteudo-2-caixas .conteudo-caixa-02 {
+        width: 68%
+    }
+    .background-conteudo-3 {
+        height: auto;
+        margin-bottom: 100px;
+        padding: 0px 45px;
+    }
+    .conteudo-3 h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .conteudo-3 p {
+        line-height: 26px;
+    }
+    .caixas-3-01, /*MEU ERRO DE INICIANTE MAS DEI UM JEITO*/
+    .caixas-3-02,
+    .caixas-3-03 {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .conteudo-caixa-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+    .conteudo-caixa-3 a {
+        margin: 0 0 20px 0
+    }
+    .assunto-caixa-3 {
+        text-align: center;
+        padding: 0 0 30px 0;
+    }
+    .background-conteudo-4 {
+        height: auto;
+        padding: 100px 40px;
+    }
+    .caixa-conteudo-4 {
+        left: 0;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    .background-conteudo-5 {
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .conteudo-5 {
+        padding: 0 70px;
+    }
+    .conteudo-5 h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .caixa-conteudo-5 {
+        flex-direction: column;
+        height: auto;
+    }
+    .background-conteudo-6 {
+        width: auto;
+        height: auto;
+        margin-bottom: 50px;
+        padding: 0px 63px;
+    }
+    .bolinhas-fundo {
+        display: none;
+    }
+    .conteudo-titulo-6 {
+        width: auto;
+        height: auto;
+    }
+    .conteudo-titulo-6 h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .conteudo-titulo-6 p {
+        max-width: none;
+        margin: 0;
+    }
+    .caixa-scroll-6 {
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .conteudo-6-caixa {
+        height: auto;
+    }
+    #conteudo-6-caixa-02 {
+        top: 0;
+    }
+    .conteudo-6-principal {
+        height: auto;
+    }
+    .tabela-conteudo-6-principal {
+        width: auto;
+    }
+    .background-conteudo-7 {
+        width: auto;
+        height: auto;
+        padding: 110px 60px;
+    }
+    .conteudo-7 h3 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .conteudo-7 a {
+        padding: 15px 15px;
+        font-size: 17px;
+    }
+    .background-conteudo-8 {
+        height: auto;
+        padding: 0 60px;
+    }
+    .titulo-conteudo-8 h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .coluna-1-conteudo-8 {
+        align-items: center;
+        padding: 0;
+    }
+    .local-conteudo-baixo-1 {
+        width: auto;
+        height: auto;
+        padding: 30px 20px 40px 20px;
+    }
+    .local-conteudo-baixo-1-caixa {
+        right: 0;
+    }
+    .caixa-coluna-1 {
+        width: auto;
+        height: auto;
+        background: none;
+    }
+    .local-image-cima-1 {
+        width: auto;
+        height: auto;
+    }
+    .local-conteudo-baixo-1-caixa {
+        padding: 0;
+        gap: 10px;
+    }
+    .background-conteudo-9 {
+        height: auto;
+    }
+    .caixa-conteudo-9 {
+        height: auto;
+        flex-direction: column;
+        gap: 45px;
+        padding: 0px 42px;
+    }
+    .conteudo-9 {
+        width: auto;
+        margin: 0;
+        padding: 0 15px;
+    }
+    .conteudo-9 h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .conteudo-9-carousel {
+        width: auto;
+        height: auto;
+    }
+    .box-destaque-9 {
+        width: auto;
+    }
+    .owl-item {
+        left: -17px;
+    }
+    .background-conteudo-10 {
+        margin-bottom: 0;
+        padding: 50px 60px;
+    }
+    .titulo-conteudo-10 {
+        text-align: center;
+    }
+    .titulo-conteudo-10 h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .caixa-conteudo-10 {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .informacoes-conteudo-10 {
+        width: auto;
+    }
+    .sugestao-conteudo-10 {
+        margin: 0;
+        padding: 20px;
+    }
+    .accordion-header {
+        font-size: 17px;
+        line-height: 32px;
+    }
+    .accordion-item.active .accordion-header i {
+        margin-right: 15px;
+        padding: 23px 16px 50px;
+    }
+    .accordion-header {
+        padding: 15px 0;
+    }
+    .sugestao-conteudo-10 h4 {
+        font-size: 23px;
+    }
+    .dados-name-email-subject-10 input {
+        width: auto;
+        padding: 20px 50px 20px 20px;
+    }
+    .sub-menu-fixo {
+        width: 100vw;
+    }
+    .background-footer {
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+    .caixa-footer {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        gap: 32px;
+        padding: 100px 65px;
+    }
+    .caixa-footer-logo {
+        width: auto;
+        height: auto;
+    }
+    .footer-services-links {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    .footer-informacao {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    .sub-menu-fixo-logo-link {
+        right: 0;
+        margin: 0;
+    }
+    .sub-menu-fixo-link {
+        display: none;
+        margin: 0;
+        left: 0;
+    }
+    .sub-menu-fixo-logar {
+        left: 0;
+    }
+    .caixa-volta-menu-principal {
+        right: 30px;
+    }
+    ul.sub-menu {
+        display: none;
+    }
+}

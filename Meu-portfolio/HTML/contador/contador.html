@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contagem regressiva</title>
+        <link rel="icon" type="image/png" href="../../FOTOS-PNG/letra-v-16px.png">
+        <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;		
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            font-size: 4.6rem;
+            color: #f8f9fa;
+            font-weight: 900;
+        }
+        .wrapper{
+            display: flex;
+        }
+        .count-wrapper{
+            width: 140px;
+            height: 140px;
+            background: #f8f9fa;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 .6rem;
+            padding: 0 0 25px 0 ;
+        }
+        .count-wrapper div{
+            font-weight: 900;
+            font-size: 4rem;
+            color: #999;
+        }
+        .count-wrapper span{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            padding: .2rem 0;
+            background: #999;
+        }
+        .alert{
+            animation: alert 1s linear infinite alternate;
+        }
+        @keyframes alert{
+            0%{
+                background: #112
+            }
+            100%{
+                background: #a11;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Contagem regressiva</h1>
+        <div class="wrapper">
+            <div class="count-wrapper">
+                <div id="days">00</div>
+                <span>Dias</span>
+            </div>
+            <div class="count-wrapper">
+                <div id="hours">00</div>
+                <span>Horas</span>
+            </div>
+            <div class="count-wrapper">
+                <div id="min">00</div>
+                <span>Minutos</span>
+            </div>
+            <div class="count-wrapper">
+                <div id="sec">00</div>
+                <span>Segundos</span>
+            </div>
+        </div>
+        <script type="text/javascript">
+            let to =new Date('jul 10 2024 00:00:00'); //COLOQUE O DIA QUE VOCE QUER A CONTAGEM ATE ESSE DIA
+            function update(){
+                let from =new Date();
+                    diff=to-from;
+                    if(diff>0){
+                    let days=setTwoDigit(Math.floor(diff/1000/60/60/24)),
+                    hours=setTwoDigit(Math.floor(diff/1000/60/60)%24),
+                    min=setTwoDigit(Math.floor(diff/1000/60)%60),
+                    sec=setTwoDigit(Math.floor(diff/1000)%60)
+                    document.querySelector('#days').innerText=days
+                    document.querySelector('#hours').innerText=hours
+                    document.querySelector('#min').innerText=min
+                    document.querySelector('#sec').innerText=sec
+                }else{
+                    clearInterval(interval);
+                    document.querySelector('body').classList.add('alert')
+                }
+            }
+            
+            let interval=setInterval(update,1000)
+
+            function setTwoDigit(argument) {
+                return argument>9?argument:'0'+argument;
+            }
+            
+        </script>
+    </body>
+</html>

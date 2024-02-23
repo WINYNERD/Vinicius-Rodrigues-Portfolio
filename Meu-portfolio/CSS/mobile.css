@@ -2,15 +2,11 @@
     .aviso-manutencao h1 {
         margin: 0;
     }
-
-    footer {
-        margin-top: 20px;
-    }
 }
 
 @media screen and (max-width: 1280px) {
     .conteudo-principal-apresentacao {
-        flex-direction: column;
+        
     }
 
     .card-perfil {
@@ -18,7 +14,27 @@
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .conteudo-principal-apresentacao {
+        flex-direction: column;
+        height: auto;
+    }
+    .conteudo-principal-apresentacao-texto {
+        width: 100%;
+        display: flex;
+        padding: 40px 0px 0;
+        flex-direction: column;
+    }
+    .conteudo-principal-skills {
+        width: 100%;
+    }
+    .conteudo-principal-contato {
+        width: 100%;
+    }
+    .menu {
+        gap: 2rem;
+    }
+}
 
 @media screen and (max-width: 480px) {
     body {
