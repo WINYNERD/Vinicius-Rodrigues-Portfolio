@@ -96,7 +96,7 @@
     }
 
     .conteudo-principal-apresentacao {
-        width: 80%;
+        width: 92%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -126,5 +126,13 @@
         padding: 50px 0px 0;
         flex-direction: column;
         width: auto;
+    }
+    article {
+        width: 20rem;
+        cursor: pointer;
+    }
+    .container.projetos img {
+        width: 240px;
+        height: 175px;
     }
 }
