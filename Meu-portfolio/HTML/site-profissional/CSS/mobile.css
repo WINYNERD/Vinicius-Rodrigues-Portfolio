@@ -7,6 +7,12 @@
     .menu-contato-link {
         height: 100%;
     }
+    #logo-image {
+        width: 32px;
+    }
+    .background-footer-copyright p {
+        font-size: smaller;
+    }
     .banner-menu-contato-link {
         height: 420px;
     }

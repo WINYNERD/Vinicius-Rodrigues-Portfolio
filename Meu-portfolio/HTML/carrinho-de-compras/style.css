@@ -239,3 +239,63 @@ input[type="number"] {
 .adicionar-produto {
   padding-bottom: 180px;
 }
+
+@media screen and (max-width: 480px) {
+  .conteudo-principal {
+    filter: drop-shadow(0px 0px 70px rgba(2, 189, 255, 0.40));
+    display: flex;
+    grid-template-columns: 1.375fr 1fr;
+    background: white;
+    flex-direction: column;
+    padding: 0 0 2rem 0;
+}
+.adicionar-produto {
+  padding-bottom: 0;
+  text-align: center;
+}
+.produto-input {
+  width: auto;
+  padding: 1rem 2.5rem 1rem 1rem;
+}
+.formulario {
+  align-items: center;
+}
+.formulario > .parte-inferior {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.botoes-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.grafismo-azul {
+  position: relative;
+  width: auto;
+  height: 1rem;
+  background-image: url(./assets/grafismo-azul.svg);
+  top: -1rem;
+}
+.titulo {
+  font-size: 3rem;
+}
+.botao-form {
+  width: 10rem;
+  height: 3.25rem;
+}
+.carrinho {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-items: center;
+}
+img {
+  height: 20px;
+}
+.divisoria {
+  width: 15rem;
+}
+}

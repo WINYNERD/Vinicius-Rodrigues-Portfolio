@@ -146,3 +146,18 @@ button:disabled {
         padding: 1rem
     }
 }
+@media screen and (max-width: 480px) {
+    .container {
+        height: 65%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .container__input {
+        height: 3rem;
+        padding: 1rem;
+    }
+    .container__botao {
+        padding: 16px 5px;
+    }
+}
