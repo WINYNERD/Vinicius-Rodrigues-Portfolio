@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Rodrigues</title>
+    <link rel="icon" type="image/png" href="../image/FOTOS-PNG/letra-v-16px.png">
+    <script defer src="https://kit.fontawesome.com/b0cf4367e1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <style>
+        /* Background animado de tecnologia */
+        body {
+            background-color: #1a202c;
+            /* Cor gray-900 */
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: 100px 100px;
+            animation: moveBackground 20s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 100px 100px;
+            }
+        }
+
+        .fixed-card {
+            position: fixed;
+        }
+
+        @media screen and (max-width: 1700px) {
+            .fixed-card {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-300 min-h-screen flex flex-col">
+    <div id="particles-js"></div>
+    <header id="header"
+        class="bg-gray-900 text-gray-300 shadow-lg border border-gray-700 w-full z-50 transition-all duration-300">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center relative">
+                <a href="#home">
+                    <img class="h-16 w-16" src="../image/FOTOS-PNG/letra-v-64px.png" alt="logo-v">
+                </a>
+            </div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover-effect">HOME</a></li>
+                <li><a href="#projetos" class="hover-effect">PROJETOS</a></li>
+                <li><a href="#skills" class="hover-effect">SKILLS</a></li>
+                <li><a href="#contato" class="hover-effect">CONTATO</a></li>
+                <li><a href="#sobre" class="hover-effect">MAIS SOBRE MIM</a></li>
+            </ul>            
+            <div class="md:hidden fixed right-4">
+                <button id="hamburguer" class="text-white focus:outline-none mr-1 border-2 border-slate-600 rounded-full bg-gray-900 p-2">
+                    <i class="fa fa-bars text-2xl"></i>
+                </button>
+                <div id="mobile-menu" class="absolute right-0 top-full mt-2 w-12 bg-gray-800 text-white hidden flex-col space-y-4 rounded-lg shadow-lg p-4 transition-transform duration-300 ease-in-out transform origin-top scale-y-0">
+                    <div class="flex flex-col space-y-4">
+                        <a href="#home" class="block text-white font-semibold hover:text-gray-300 transition-colors duration-300">
+                            <i class="fa fa-home"></i>
+                        </a>
+                        <a href="#projetos" class="block text-white hover:text-gray-300 transition-colors duration-300">
+                            <i class="fa fa-briefcase"></i>
+                        </a>
+                        <a href="#skills" class="block text-white hover:text-gray-300 transition-colors duration-300">
+                            <i class="fa fa-code"></i>
+                        </a>
+                        <a href="#contato" class="block text-white hover:text-gray-300 transition-colors duration-300">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="#sobre" class="block text-white hover:text-gray-300 transition-colors duration-300">
+                            <i class="fa fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>         
+        </nav>
+    </header>
+    <div
+        class="fixed-card max-[1700px]:w-[500px] max-[520px]:w-[320px] max-[1700px]:mx-auto max-[1700px]:mt-10 bg-gray-800 mt-32 p-6 rounded-lg shadow-lg border border-gray-700 w-72 ml-16">
+        <h1 class="text-2xl font-bold mb-2 text-lime-500 text-center">Vinícius Rodrigues</h1>
+        <p class="text-gray-300 mb-4 text-center">Desenvolvedor de Software <br>| React.js | JAVA | PHP | MySQL |</p>
+        <img class="mx-auto mb-4 w-full h-auto max-w-xs object-cover border-4 border-gray-700 rounded-lg"
+            src="../image/FOTOS-PNG/EU 2.0.png" alt="foto-perfil">
+        <p class="text-gray-300 text-center">Analista e Desenvolvedor de Sistemas</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a id="github" target="_blank" href="https://github.com/WINYNERD" class="text-gray-300 hover:text-gray-100">
+                <i class="fa-brands fa-github text-2xl"></i>
+            </a>
+            <a id="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=5521997807340"
+                class="text-green-500 hover:text-green-300">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+            </a>
+            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/vinicius-rodrigues1821/"
+                class="text-blue-600 hover:text-blue-400">
+                <i class="fa-brands fa-linkedin text-2xl"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Home Section -->
+    <main class="main-content flex-grow container mx-auto h-[32rem] my-10 px-4 max-w-[980px]" id="home">
+        <section
+            class="flex flex-col md:flex-row items-center justify-between bg-gray-900 text-gray-300 p-6 rounded-lg shadow-lg border border-gray-700 md:space-x-8 space-y-4 md:space-y-0">
+            <div class="md:w-2/3 w-full mt-8 md:mt-0 md:pl-8">
+                <h1 class="text-3xl font-bold text-lime-500 mb-2 text-center md:text-left py-1">Olá Bem-Vindo(a)!</h1>
+                <p id="typing-animation" class="text-gray-300 text-center md:text-left"></p>
+            </div>
+        </section>
+    </main>
+    <!-- Projetos Section -->
+    <section class="container mx-auto my-10 px-4 max-w-[980px]" id="projetos">
+        <h2 class="text-3xl font-bold text-lime-500 mb-6 text-center">Projetos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="#" target="_blank"
+                class="project-item block bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-20 transition-all duration-500 ease-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <img src="../image/FOTOS-PNG/contador.png" alt="Contador Regressivo"
+                    class="rounded-lg mb-4 w-full h-48 object-contain">
+                <h3 class="text-xl font-semibold text-lime-500 mb-2 text-center">Contador Regressivo</h3>
+                <p class="text-gray-300">Programa criado para contagem regressiva para uma data específica.</p>
+            </a>
+
+            <a href="#" target="_blank"
+                class="project-item block bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-20 transition-all duration-500 ease-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <img src="../image/FOTOS-PNG/site-profissional.png" alt="Site Profissional"
+                    class="rounded-lg mb-4 w-full h-48 object-contain">
+                <h3 class="text-xl font-semibold text-lime-500 mb-2 text-center">Site Profissional</h3>
+                <p class="text-gray-300">Uma página profissional desenvolvida do zero para praticar conhecimentos
+                    adquiridos.</p>
+            </a>
+
+            <a href="#" target="_blank"
+                class="project-item block bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-20 transition-all duration-500 ease-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <img src="../image/FOTOS-PNG/carrinho-de-compras.png" alt="Carrinho de Compras"
+                    class="rounded-lg mb-4 w-full h-48 object-contain">
+                <h3 class="text-xl font-semibold text-lime-500 mb-2 text-center">Carrinho de Compras</h3>
+                <p class="text-gray-300">Projeto para adicionar itens ao carrinho, com cálculos automáticos conforme a
+                    quantidade.</p>
+            </a>
+
+            <a href="#" target="_blank"
+                class="project-item block bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-20 transition-all duration-500 ease-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <img src="../image/FOTOS-PNG/numeor-sorteado.png" alt="Número Sorteado"
+                    class="rounded-lg mb-4 w-full h-48 object-contain">
+                <h3 class="text-xl font-semibold text-lime-500 mb-2 text-center">Número Sorteado</h3>
+                <p class="text-gray-300">Mini game onde você tenta acertar um número sorteado, com feedback de
+                    tentativas.</p>
+            </a>
+
+            <a href="#" target="_blank"
+                class="project-item block bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-20 transition-all duration-500 ease-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <img src="../image/FOTOS-PNG/fokus.png" alt="Fokus" class="rounded-lg mb-4 w-full h-48 object-contain">
+                <h3 class="text-xl font-semibold text-lime-500 mb-2 text-center">Fokus</h3>
+                <p class="text-gray-300">Sistema de foco e descanso, com contador e música relaxante.</p>
+            </a>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="container mx-auto my-10 px-4 max-w-[980px]" id="skills">
+        <h2 class="text-3xl font-bold text-lime-500 mb-6 text-center">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+            <!-- React Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-react text-cyan-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">React</h3>
+                        <span class="text-lime-500">92%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-cyan-500 h-2.5 rounded-full" style="width: 92%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TypeScript Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-js-square text-blue-600 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">TypeScript</h3>
+                        <span class="text-lime-500">85%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-python text-blue-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Python</h3>
+                        <span class="text-lime-500">79%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 79%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JavaScript Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-js text-yellow-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">JavaScript</h3>
+                        <span class="text-lime-500">89%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 89%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ruby Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-solid fa-gem text-red-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Ruby</h3>
+                        <span class="text-lime-500">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-red-500 h-2.5 rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tailwind Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-solid fa-code text-blue-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Tailwind</h3>
+                        <span class="text-lime-500">85%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MySQL Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-solid fa-database text-blue-600 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">MySQL</h3>
+                        <span class="text-lime-500">89%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 89%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SQL Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-solid fa-database text-blue-600 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">SQL</h3>
+                        <span class="text-lime-500">88%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 88%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Java Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-java text-red-600 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Java</h3>
+                        <span class="text-lime-500">85%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-red-600 h-2.5 rounded-full" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHP Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-php text-indigo-600 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">PHP</h3>
+                        <span class="text-lime-500">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Git Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-git-alt text-orange-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Git</h3>
+                        <span class="text-lime-500">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-orange-500 h-2.5 rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C# Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-windows text-blue-700 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">C#</h3>
+                        <span class="text-lime-500">75%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-700 h-2.5 rounded-full" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ASP.NET Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-solid fa-code text-purple-600 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">ASP.NET</h3>
+                        <span class="text-lime-500">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-purple-600 h-2.5 rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flask Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-solid fa-flask text-yellow-600 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Flask</h3>
+                        <span class="text-lime-500">68%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-yellow-600 h-2.5 rounded-full" style="width: 68%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Django Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-solid fa-code text-green-600 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Django</h3>
+                        <span class="text-lime-500">55%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-green-600 h-2.5 rounded-full" style="width: 55%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Angular Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-angular text-red-600 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Angular</h3>
+                        <span class="text-lime-500">72%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-red-600 h-2.5 rounded-full" style="width: 72%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Node.js Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-node text-green-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Node.js</h3>
+                        <span class="text-lime-500">78%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-green-500 h-2.5 rounded-full" style="width: 78%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kotlin Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-solid fa-mobile text-purple-600 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Kotlin</h3>
+                        <span class="text-lime-500">65%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-purple-600 h-2.5 rounded-full" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- React Native Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-react text-cyan-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">React Native</h3>
+                        <span class="text-lime-500">75%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-cyan-500 h-2.5 rounded-full" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flutter Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-flutter text-blue-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Flutter</h3>
+                        <span class="text-lime-500">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PostgreSQL Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-solid fa-database text-blue-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">PostgreSQL</h3>
+                        <span class="text-lime-500">78%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 78%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MongoDB Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-solid fa-database text-green-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">MongoDB</h3>
+                        <span class="text-lime-500">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-green-500 h-2.5 rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Docker Skill -->
+            <div
+                class="skill-item flex items-center space-x-4 bg-gray-900 text-gray-300 p-4 rounded-lg shadow-lg border border-gray-700 opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-in-out hover:border-lime-500 hover:shadow-2xl hover:scale-105">
+                <i class="fa-brands fa-docker text-blue-500 text-4xl"></i>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-lime-500">Docker</h3>
+                        <span class="text-lime-500">78%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 78%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto my-10 px-4 max-w-[980px]">
+        <h2 class="text-3xl font-bold text-lime-500 mb-6 text-center">Sobre Mim</h2>
+        <div class="bg-gray-900 text-gray-300 p-6 rounded-lg shadow-lg border border-gray-700">
+            <p class="mb-4">
+                Minha abordagem é centrada no usuário, com o objetivo de entender profundamente suas necessidades e
+                oferecer uma experiência agradável por meio de interfaces intuitivas e funcionais. Tenho sólida
+                experiência no desenvolvimento de sites e aplicações web, utilizando tecnologias e frameworks como:
+            </p>
+            <ul class="list-disc pl-6 mb-4">
+                <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript, TypeScript, React.js, Angular</li><br>
+                <li><strong>Back-End:</strong> Python (Django, Flask), Node.js, Java, PHP, C#</li><br>
+                <li><strong>Mobile:</strong> Kotlin, React Native, Flutter</li><br>
+                <li><strong>Banco de Dados:</strong> MySQL, PostgreSQL, MongoDB, SQL</li><br>
+                <li><strong>Outras Tecnologias:</strong> Docker, Git, ASP.NET</li><br>
+            </ul>
+            <p class="mb-4">
+                Estou constantemente me atualizando com as mais recentes tendências de desenvolvimento Front-End e
+                procuro implementar as melhores práticas em meus projetos. Sou adepto de metodologias ágeis, o que me
+                permite trabalhar de forma colaborativa e eficiente em equipe. Minhas habilidades de comunicação e minha
+                capacidade de trabalhar em projetos multidisciplinares me permitem colaborar eficazmente com designers,
+                desenvolvedores Back-End e outros profissionais, visando a entrega de produtos de alta qualidade.
+            </p>
+            <p class="mb-4">
+                Se você está em busca de um desenvolvedor dedicado, curioso e comprometido em criar interfaces atraentes
+                e funcionais, estou pronto para enfrentar novos desafios e transformar suas ideias em realidade.
+            </p>
+            <p class="font-semibold text-lime-500">
+                Ficarei feliz em discutir como posso agregar valor à sua equipe ou projeto. Entre em contato para
+                conversarmos mais!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section class="container mx-auto my-10 px-4 max-w-[980px]" id="contato">
+        <h2 class="text-3xl font-bold text-lime-500 mb-6 text-center">Contato</h2>
+        <div class="bg-gray-900 text-gray-300 p-6 rounded-lg shadow-lg border border-gray-700">
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-semibold text-lime-500">Vinícius de Carvalho Rodrigues</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-300">
+                <div class="flex items-center">
+                    <i id="email-icon" class="fa-solid fa-envelope text-lime-500 text-2xl mr-4"></i>
+                    <div>
+                        <h4 class="text-lg font-semibold">E-mail:</h4>
+                        <p id="email" class="cursor-pointer text-lime-500 hover:underline" onclick="copyEmail()">
+                            vinicius-carvalho21@hotmail.com</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i id="phone-icon" class="fa-solid fa-phone text-lime-500 text-2xl mr-4"></i>
+                    <div>
+                        <h4 class="text-lg font-semibold">Telefone:</h4>
+                        <p id="phone-number" class="cursor-pointer text-lime-500 hover:underline" onclick="copyPhone()">
+                            +55 (21) 99780-7340</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i id="discord-icon" class="fa-brands fa-discord text-indigo-500 text-2xl mr-4"></i>
+                    <div>
+                        <h4 class="text-lg font-semibold">Discord:</h4>
+                        <p id="discord-name" class="cursor-pointer text-lime-500 hover:underline"
+                            onclick="copyDiscord()">WINYNERD#6609</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-2xl mr-4"></i>
+                    <div>
+                        <h4 class="text-lg font-semibold">WhatsApp:</h4>
+                        <p><a href="https://api.whatsapp.com/send?phone=5521997807340" target="_blank"
+                                class="text-lime-500 hover:underline">Enviar Mensagem</a></p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-brands fa-linkedin text-blue-600 text-2xl mr-4"></i>
+                    <div>
+                        <h4 class="text-lg font-semibold">LinkedIn:</h4>
+                        <p><a href="https://www.linkedin.com/in/vinicius-rodrigues1821/" target="_blank"
+                                class="text-lime-500 hover:underline">Vinícius Rodrigues</a></p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-brands fa-github text-gray-400 text-2xl mr-4"></i>
+                    <div>
+                        <h4 class="text-lg font-semibold">GitHub:</h4>
+                        <p><a href="https://github.com/WINYNERD" target="_blank"
+                                class="text-lime-500 hover:underline">Vinícius Rodrigues (WINYNERD)</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mais Sobre Mim Section -->
+    <section class="container mx-auto my-10 px-4 max-w-[980px]" id="sobre">
+        <h2 class="text-3xl font-bold text-lime-500 mb-4 text-center">Mais Sobre Mim</h2>
+        <section class="aviso-manutencao text-center">
+            <h1>AMO COMER FEIJOADA :) !</h1>
+        </section>
+    </section>
+
+    <footer class="bg-gray-900 text-center py-4 mt-auto border border-gray-700">
+        <div class="container mx-auto">
+            <p class="text-gray-300">© 2023 Desenvolvido por <strong class="text-lime-500">Vinícius Rodrigues</strong>
+            </p>
+        </div>
+    </footer>
+    <a href="#" id="back-to-top"
+        class="fixed bottom-4 right-4 bg-lime-500 text-white p-3 rounded-full shadow-lg hover:bg-lime-600 transition-opacity duration-300 opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up text-xl"></i>
+    </a>
+    <script src="../javascript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Diretórios de build
+dist/
+build/
+
+# Dependências
+.DS_Store
+.vscode/
+.idea/
+
+# Netlify
+.netlify/
+
+# Cache e intermediários
+tmp/
+temp/
+*.tmp
+*.swp
+
+# Editor de código
+*.sublime-project
+*.sublime-workspace
+
+# Sistema operacional
+Thumbs.db
+Desktop.ini
+
+# Testes e cobertura
+coverage/
